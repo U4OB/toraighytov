@@ -7,30 +7,46 @@
 <body>
 
     <div id="flipbook">
-    <div class="hard"><img src="assets/1_20251005_113026_0000.png">></div>
-    <div class="hard"></div>
-    
-    <div><img src="assets/2_20251005_113027_0001.png" alt="Страница 1"></div>
-    <div><img src="assets/3_20251005_113027_0002.png" alt="Страница 2"></div>
-    <div class="hard"></div>
-    <div class="hard">Задняя обложка</div>
-</div>
+        <div class="hard"><img src="assets/1_20251005_113026_0000.png"></div>
+        
+        
+        
+        <div><img src="assets/3_20251005_113027_0002.png" alt="Страница 3"></div>
+        <div><img src="assets/4_20251005_113027_0003.png" alt="Страница 4"></div>
+        <div><img src="assets/5_20251005_113027_0004.png" alt="Страница 5"></div>
+        <div><img src="assets/6_20251005_113027_0005.png" alt="Страница 6"></div>
+        <div><img src="assets/7_20251005_113027_0006.png" alt="Страница 7"></div>
+        <div><img src="assets/8_20251005_113027_0007.png" alt="Страница 8"></div>
+        <div><img src="assets/9_20251005_113027_0008.png" alt="Страница 9"></div>
+        <div class="hard"></div>
+        <div><img src="assets/10_20251005_113027_0009.png" alt="Страница 10"></div>
+        
+        
+        
+    </div>
 
-    <script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="lib/turn.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/turn.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $("#flipbook").turn({
-    // Масштабированный размер: 566 x 800
-    width: 1132,      // Ширина разворота (566 * 2)
-    height: 800,      // Высота страницы
-    autoCenter: true,
-    gradients: true,
-    elevation: 50
-});
+    $(document).ready(function() {
+        $("#flipbook").turn({
+            width: 1414,      // Ширина разворота (707 * 2)
+            height: 1000,     // Высота страницы
+            autoCenter: true,
+            gradients: true,
+            autoCenter: true,
+            // !!! Отключите эти опции !!!
+            gradients: false, 
+            elevation: 0, 
+            acceleration: true 
+
+            
+            
         });
-    </script>
+    });
+</script>
+
 
 </body>
 </html>
