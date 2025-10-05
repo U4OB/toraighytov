@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя онлайн-книга А4 (Turn.js)</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="flipbook">
+    <div class="hard"><img src="assets/1_20251005_113026_0000.png">></div>
+    <div class="hard"></div>
+    
+    <div><img src="assets/2_20251005_113027_0001.png" alt="Страница 1"></div>
+    <div><img src="assets/3_20251005_113027_0002.png" alt="Страница 2"></div>
+    <div class="hard"></div>
+    <div class="hard">Задняя обложка</div>
+</div>
+
+    <script type="text/javascript" src="lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="lib/turn.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#flipbook").turn({
+    // Масштабированный размер: 566 x 800
+    width: 1132,      // Ширина разворота (566 * 2)
+    height: 800,      // Высота страницы
+    autoCenter: true,
+    gradients: true,
+    elevation: 50
+});
+        });
+    </script>
+
+</body>
+</html>

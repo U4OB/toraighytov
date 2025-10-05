@@ -1,0 +1,52 @@
+#flipbook {
+    position: relative;
+    background: transparent;
+}
+
+body {
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Убирает скролл */
+}
+
+#flipbook {
+width: 2828px; 
+    height: 2000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+
+/* Стиль для каждой отдельной страницы */
+#flipbook div {
+    width: 1414px; 
+    height: 2000px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* Настройте эти отступы под ваш контент А4 */
+    padding: 20px; 
+    box-sizing: border-box; /* Важно, чтобы padding не увеличивал размер страницы */
+}
+
+/* Стиль для изображений внутри страниц */
+#flipbook div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Обеспечивает, что изображение впишется в страницу */
+}
+
+/* Стиль для обложки (можно сделать её другого цвета или с минимальным padding) */
+#flipbook .hard {
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    padding: 0; /* Убираем padding для обложки */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
